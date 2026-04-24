@@ -6,7 +6,10 @@ import axiosInstance from "@/lib/axiosinstance";
 import { toast } from "react-toastify";
 import { Main } from "next/document";
 
-/* This is for forget password. When a user forget's their password they click on forgot password in login page (/auth) then this page will open then they enter their email or phone number, if it looks like email the app will know its an email or if its phone number app will know its phone number and click on reset password button then a password will be shown in a pop up message including upper and lower case alphabets then it will redirect to login page */
+/* This is for forget password.
+   When a user forget's their password they click on forgot password in login page (/auth) then this page will open then they enter their email or phone number,
+    if it looks like email the app will know its an email or if its phone number app will know its phone number and click on reset password button then a password will be shown in a pop up message including upper and lower case alphabets
+   then it will redirect to login page */
 
 export default function ForgotPassword() {
   const [form, setForm] = useState({ identifier: "" });

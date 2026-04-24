@@ -3,7 +3,10 @@ import axiosInstance from "@/lib/axiosinstance";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 
-/*  PointTransfer component enables users to send points to another user account. It manages recipient and amount inputs, validates them, and communicates with the backend via an API call to perform the transfer. Success and error messages are displayed to the user. The state updates reset the form and provide clear status messages after each transfer attempt. */
+/*  PointTransfer component enables users to send points to another user account.
+ It manages recipient and amount inputs, validates them, and communicates with the backend via an API call to perform the transfer.
+ Success and error messages are displayed to the user. The state updates reset the form and provide clear status messages after each transfer attempt.
+  */
 
 export default function PointTransfer() {
   const { t } = useTranslation();

@@ -167,7 +167,7 @@ const handleVerify = async () => {
         ))}
       </select>
 
-      {/* 🔥 OTP MODAL */}
+      {/* OTP */}
      {otpUi && (
   <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-40 z-50">
     <div className="bg-white rounded-lg shadow-xl w-96 p-6">

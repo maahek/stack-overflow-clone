@@ -16,7 +16,7 @@ axiosInstance.interceptors.request.use((config) => {
   return config;
 });
 
-// 🔥 PREVENT MULTIPLE REDIRECTS
+// prevents multiple redirects
 let isRedirecting = false;
 
 axiosInstance.interceptors.response.use(

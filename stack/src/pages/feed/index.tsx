@@ -113,13 +113,13 @@ export default function Feed() {
               typeof post.media === "string" &&
               (post.media.endsWith(".mp4") ? (
                 <video
-                  src={`http://localhost:5000/${post.media}`}
+                  src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/${post.media}`}
                   controls
                   className="w-full rounded mb-2"
                 />
               ) : (
                 <img
-                  src={`http://localhost:5000/${post.media}`}
+                  src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/${post.media}`}
                   className="w-full rounded mb-2"
                 />
               ))}
